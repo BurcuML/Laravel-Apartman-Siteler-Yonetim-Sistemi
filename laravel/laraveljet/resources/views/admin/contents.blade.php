@@ -18,6 +18,7 @@
                     <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Category</th>
                         <th>name</th>
                         <th>Type</th>
                         <th class="text-right">Status</th>
@@ -33,6 +34,7 @@
                         <tr>
 
                             <td>{{ $user->id }}</td>
+                            <td>{{ $user->menu->title ?? 'None'}}</td>
                             <td>{{ $user->title }}</td>
                             <td>{{ $user->type }}</td>
                             <td class="text-right">{{ $user->status }}</td>

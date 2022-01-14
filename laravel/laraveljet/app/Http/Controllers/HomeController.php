@@ -2,18 +2,45 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Content;
+use App\Models\Menu;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-    //
-public function index(){
+    public static function menuList()
+    {
+        return Menu::where('parent_id', '=' , 0)->with('children')->get(); //sorgu fonksiyonu, parent_id si 0 olanlarla başlıyoruz
+    }
 
-    return view('home.index');
-}
+    public static function getSetting()
+    {
+        return Setting::first();
+    }
+
+     public function index()
+     {
+
+    $setting= Setting::first();         //tek satır alıyoruz
+    return view('home.index', ['setting'=> $setting]);
+     }
 
     public function aboutus(){
+
+        return view('home.about');
+    }
+
+    public function faq(){
+
+        return view('home.about');
+    }
+    public function references(){
+
+        return view('home.about');
+    }
+    public function contact(){
 
         return view('home.about');
     }

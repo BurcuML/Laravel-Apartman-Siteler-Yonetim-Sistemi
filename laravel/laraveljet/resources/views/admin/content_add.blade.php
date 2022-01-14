@@ -14,10 +14,10 @@
     <br> <br> <br>
     <div class="row">
         <div class="col-lg-12">
-            <h2 class="title-1 m-b-25">Ekle</h2>
+            <h2 class="title-1 m-b-25">Content Add</h2>
             <div class="card">
-                <div class="card-header">Form</div>
-                <div class="card-body card-block">
+                <div class="card-header" style="background-color: #9999cc; color: #0a0a0a">Form</div>
+                <div class="card-body card-block" style="background-color: #9999cc">
                     <form role="form" action="{{route('admin_content_store')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
@@ -25,11 +25,11 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-user"></i>
                                 </div>
-                                <select name="menu_id" id="SelectLm"  class="form-control " style="height: 3rem;">
+                                <select name="menu_id" id="SelectLm"  class="form-control " style="height: 3.5rem;">
 
                                     <option value="">Kişi Listesi</option>
                                     @foreach ($datalist as $user)
-                                        <option value="{{ $user->id }}">{{ $user->title}}</option>
+                                        <option value="{{ $user->id }}">{{ \App\Http\Controllers\Admin\MenuController::getParentsTree($user, $user->title )}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -78,7 +78,7 @@
                             <div class="input-group">
                                 <div class="input-group-addon">
                                 </div>
-                                <input type="file" id="email" name="image" placeholder="Image" class="form-control">
+                                <input type="file" id="email" name="image" placeholder="Image" class="form-control" style="height: 4rem;">
                             </div>
                         </div>
                         <div class="form-group">
@@ -94,7 +94,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                <select id="SelectLm" class="form-control" style="height: 3rem;">
+                                <select id="SelectLm" class="form-control" style="height: 3.5rem;">
                                     <option selected="selected">Please select</option>
                                     <option >True</option>
                                     <option>False</option>

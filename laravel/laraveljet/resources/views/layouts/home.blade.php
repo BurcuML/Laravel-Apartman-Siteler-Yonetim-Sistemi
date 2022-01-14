@@ -1,10 +1,13 @@
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Landing page template built with HTML and Bootstrap 4 for presenting training courses, classes, workshops and for convincing visitors to register using the form.">
-    <meta name="author" content="Inovatik">
+
+    <meta name="description" content="@yield('description')" >
+    <meta name="keywords" content="@yield('keywords')" >
+    <meta name="author" content="BML">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
     <meta property="og:site_name" content="" /> <!-- website name -->
@@ -16,7 +19,7 @@
     <meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Corso - Training Course Landing Page Template</title>
+    <title> @yield('title') </title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">

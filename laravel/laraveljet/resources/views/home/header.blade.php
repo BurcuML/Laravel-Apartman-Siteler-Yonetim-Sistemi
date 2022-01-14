@@ -5,7 +5,9 @@
     <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Corso</a> -->
 
     <!-- Image Logo -->
-    <a class="navbar-brand logo-image" href="index.html"><img src="{{ asset('assets') }}/images/logo.svg" alt="alternative"></a>
+    @auth
+    <a class="navbar-brand logo-image" style="text-decoration: none" href="{{route('adminhome')}}">{{Auth::user()->name}}</a>
+@endauth
 
     <!-- Mobile Menu Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,14 +19,15 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#register">KAYIT OL <span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="{{route('admin-login')}}">GİRİŞ<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#description">DETAYLAR</a>
+                <a class="nav-link page-scroll" href="/register">KAYIT OL <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#cards">SERVİSLER</a>
+                <a class="nav-link page-scroll" href="#description">SIKÇA SORULAN SORULAR</a>
             </li>
+
 
             <!-- Dropdown Menu -->
             <li class="nav-item dropdown">
@@ -33,10 +36,6 @@
                     <a class="dropdown-item" href="article-details.html"><span class="item-text">Kira Ödeme</span></a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Aidat Ödeme</span></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Yönetici Girişi</span></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Kullanıcı Girişi</span></a>
                 </div>
 
 
@@ -45,6 +44,9 @@
 
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="#contact">İLETİŞİM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="">REFERENCES</a>
             </li>
         </ul>
         <span class="nav-item social-icons">
@@ -75,8 +77,8 @@
 
                     <h1>Apartmanımıza Hoşgeldiniz</h1>
                     <p class="p-large">Do you feel like you're doing a lot of guess work when it comes to SEO for your website? Take the SEO training course to change that</p>
-                    <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                    <a class="btn-outline-lg page-scroll" href="#instructor">DISCOVER</a>
+                    <a class="btn-solid-lg page-scroll" href="/register">KAYIT OL</a>
+                    <a class="btn-outline-lg page-scroll" href="#instructor">KEŞFET</a>
                 </div> <!-- end of text-container -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->

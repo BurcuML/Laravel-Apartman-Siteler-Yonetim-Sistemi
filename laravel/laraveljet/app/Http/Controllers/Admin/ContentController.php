@@ -32,7 +32,7 @@ class ContentController extends Controller
     public function create()
     {
         //
-        $datalist= Menu::all();
+        $datalist = Menu::with('children')->get();
         return view('admin.content_add', ['datalist' => $datalist]);
     }
 
@@ -81,7 +81,7 @@ class ContentController extends Controller
     {
         //
         $data=Content::find($id);
-        $datalist = Content::all();
+        $datalist = Menu::with('children')->get();
         return view('admin.content_edit', ['data' => $data, 'datalist' => $datalist]);
     }
 
@@ -92,9 +92,23 @@ class ContentController extends Controller
      * @param  \App\Models\Content  $content
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Content $content)
+    public function update(Request $request, Content $content, $id)
     {
         //
+        $data= Content::find($id);
+        $data-> title= $request->input('title');
+        $data-> keywords = $request->input('keywords');
+        $data-> description = $request->input('description');
+        $data-> status = $request->input('status');
+        $data->type= $request->input('type');
+        $data->menu_id= $request->input('menu_id');
+        $data-> status = $request->input('status');
+        $data->type= $request->input('type');
+        $data->menu_id= $request->input('menu_id');
+        $data->user_id= Auth::id();
+        $data->detail= $request->input('detail');
+        $data->image= Storage::putFile('images', $request->file('image')); //file upload
+        $data->save();
         return redirect()->route('admin_content');
     }
 

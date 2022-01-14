@@ -25,7 +25,7 @@
                                     <option value="">Kişi Listesi</option>
                                     @foreach ($datalist as $user)
                                         <!-- ürünün kategorisi neyse oraya odakla  -->
-                                        <option value="{{ $user->id }}"  @if ($user->id == $data->parent_id) selected="selected" @endif > {{ $user->title }} </option>
+                                        <option value="{{ $user->id }}"  @if ($user->id == $data->parent_id) selected="selected" @endif > {{ \App\Http\Controllers\Admin\MenuController::getParentsTree($user, $user->title )}} </option>
                                     @endforeach
                                 </select>
                             </div>

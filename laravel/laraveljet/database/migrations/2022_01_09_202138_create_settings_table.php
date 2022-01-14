@@ -24,12 +24,13 @@ class CreateSettingsTable extends Migration
             $table->string('fax', 20)->nullable();
             $table->string('email', 100)->nullable();
             $table->string('smtpserver', 75)->nullable();
-            $table->string('smtpemail', 150);
+            $table->string('smtpemail', 75)->nullable();
             $table->string('smtppassword',15)->nullable();
             $table->integer('smtpport')->nullable()->default(0);
             $table->string('facebook', 100)->nullable();
             $table->string('instagram',100)->nullable();
             $table->string('twitter', 100)->nullable();
+            $table->string('linkedinin', 75)->nullable();
             $table->text('aboutus')->nullable();
             $table->text('contact')->nullable();
             $table->text('references')->nullable();

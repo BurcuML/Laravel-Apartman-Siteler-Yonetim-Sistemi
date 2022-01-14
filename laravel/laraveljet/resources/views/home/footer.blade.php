@@ -1,11 +1,17 @@
+@php
+    $setting =  App\Http\Controllers\HomeController::getSetting()
+@endphp
+
 <!-- Footer -->
 <div class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <div class="footer-col first">
-                    <h5>About Corso</h5>
-                    <p class="p-small">We're passionate about teaching people how to do better SEO for their online presence</p>
+                    <h5>About</h5>
+                    <p class="p-small">We're passionate about teaching people how to do better SEO for their online presence</p> <br>
+                    {{$setting->company}}<br>
+                    {{$setting->address}}
                 </div>
             </div> <!-- end of col -->
             <div class="col-md-3">
@@ -50,24 +56,26 @@
                 <div class="footer-col fourth">
                     <h5>Social Media</h5>
                     <p class="p-small">For news & updates follow us</p>
-                    <a href="#your-link">
+                    @if($setting->facebook != null)
+                    <a href="{{$setting->facebook}}">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#your-link">
+                    @endif
+                    @if($setting->twitter != null)
+                    <a href="{{$setting->twitter}}">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#your-link">
-                        <i class="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#your-link">
+                    @endif
+                    @if($setting->instagram != null)
+                    <a href="{{$setting->instagram}} ">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#your-link">
-                        <i class="fab fa-linkedin-in"></i>
+                    @endif
+                     @if($setting->linkedinin != null)
+                    <a href="{{$setting->linkedinin}}">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="#your-link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+                    @endif
                 </div>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
@@ -80,7 +88,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
+                <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved |
+                    {{$setting->company}}</p>
                 <p class="p-small">Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
             </div> <!-- end of col -->
         </div> <!-- enf of row -->

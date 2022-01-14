@@ -21,9 +21,9 @@
                         </div>
                         <select name="parent_id" id="SelectLm"  class="form-control ">
 
-                            <option value="">Kişi Listesi</option>
+                            <option value="0">Kişi Listesi</option>
                             @foreach ($datalist as $user)
-                            <option value="{{ $user->id }}">{{ $user->title}}</option>
+                            <option value="{{ $user->id }}">{{ \App\Http\Controllers\Admin\MenuController::getParentsTree($user, $user->title )}}</option>
                             @endforeach
                         </select>
                     </div>

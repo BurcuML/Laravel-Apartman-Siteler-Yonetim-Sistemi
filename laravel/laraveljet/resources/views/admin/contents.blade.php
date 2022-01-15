@@ -20,9 +20,10 @@
                         <th>ID</th>
                         <th>Category</th>
                         <th>name</th>
+                        <th>Kira</th>
+                        <th>Aidat</th>
                         <th>Type</th>
                         <th class="text-right">Status</th>
-                        <th class="text-right">Toplam Ödenen Tutar</th>
                         <th class="text-right">Image</th>
                         <th class="text-right">Gallery</th>
                         <th class="text-right">Seçenekler</th>
@@ -36,9 +37,10 @@
                             <td>{{ $user->id }}</td>
                             <td>{{ $user->menu->title ?? 'None'}}</td>
                             <td>{{ $user->title }}</td>
+                            <td>{{ $user->kira }}</td>
+                            <td>{{ $user->aidat }}</td>
                             <td>{{ $user->type }}</td>
                             <td class="text-right">{{ $user->status }}</td>
-                            <td> </td>
                             <td class="text-right">
                                 @if ($user->image)
                                     <img src="{{ Storage::url($user->image)}}" style="height:4.5rem; " alt="">

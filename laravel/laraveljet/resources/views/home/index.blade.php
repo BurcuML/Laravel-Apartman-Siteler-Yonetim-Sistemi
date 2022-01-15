@@ -1,4 +1,3 @@
-
 @extends('layouts.home')
 
 @section('title', $setting->title)
@@ -63,10 +62,6 @@
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rphone" name="rpn" required>
                                 <label class="label-control" for="rpn">Apartman Numarası</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I've read and agree to Corso's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">

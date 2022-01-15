@@ -16,15 +16,14 @@
         <table class="table table-borderless table-striped table-earning">
             <thead>
             <tr>
-                <th>date</th>
+
+                <th>ID</th>
+                <th>parent_ID</th>
+                <th>İsim</th>
                 <th>Apartman Numarası</th>
                 <th>Blok Numarası</th>
                 <th>Kira</th>
                 <th>Aidat</th>
-                <th>ID</th>
-                <th>parent_ID</th>
-                <th>İsim</th>
-                <th class="text-right">Toplam Ödenen Tutar</th>
                 <th class="text-right">Status</th>
                 <th class="text-right">Seçenekler</th>
             </tr>
@@ -33,13 +32,15 @@
             @foreach ($datalist as $user)
 
             <tr>
-                <td>2018-09-29 05:57</td>
-                <td>{{ $user->id }}</td>
-                <td class="text-right">{{ \App\Http\Controllers\Admin\MenuController::getParentsTree($user, $user->title )}}</td>
-                <td>{{ $user->title }}</td>
-                <td> </td>
-                <td class="text-right">{{ $user->status }}</td>
 
+                <td>{{ $user->id }}</td>
+                <td>{{ $user->parent_id }}</td>
+                <td class="text-right">{{ \App\Http\Controllers\Admin\MenuController::getParentsTree($user, $user->title )}}</td>
+                <td>{{ $user->apartmannumarasi }}</td>
+                <td>{{ $user->bloknumarasi }}</td>
+                <td>{{ $user->kira }}</td>
+                <td>{{ $user->aidat }}</td>
+                <td class="text-right">{{ $user->status }}</td>
 
                 <td>
                     <div class="table-data-feature">

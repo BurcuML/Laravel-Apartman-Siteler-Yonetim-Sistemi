@@ -121,7 +121,9 @@ class ContentController extends Controller
     public function destroy(Content $content, $id)
     {
         //
-        DB::table('contents')->where('id', '=', $id)->delete();
+        //DB::table('contents')->where('id', '=', $id)->delete();
+        $data=Content::find($id);
+        $data->delete();
 
         return redirect()->route('admin_content');
     }

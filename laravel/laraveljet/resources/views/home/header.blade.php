@@ -6,7 +6,7 @@
 
     <!-- Image Logo -->
     @auth
-    <a class="navbar-brand logo-image" style="text-decoration: none" href="{{route('adminhome')}}">{{Auth::user()->name}}</a>
+    <a class="navbar-brand logo-image" style="text-decoration: none" href="{{route('myprofile')}}">{{Auth::user()->name}}</a>
 @endauth
 
     <!-- Mobile Menu Toggle Button -->
@@ -25,7 +25,7 @@
                 <a class="nav-link page-scroll" href="/register">KAYIT OL <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#description">SIKÇA SORULAN SORULAR</a>
+                <a class="nav-link page-scroll" href="{{route('faq')}}">SIKÇA SORULAN SORULAR</a>
             </li>
 
 
@@ -43,10 +43,13 @@
             <!-- end of dropdown menu -->
 
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">İLETİŞİM</a>
+                <a class="nav-link page-scroll" href="{{route('contact')}}">İLETİŞİM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="">REFERENCES</a>
+                <a class="nav-link page-scroll" href="{{route('references')}}">REFERENCES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="{{route('aboutus')}}">ABOUT US</a>
             </li>
         </ul>
         <span class="nav-item social-icons">

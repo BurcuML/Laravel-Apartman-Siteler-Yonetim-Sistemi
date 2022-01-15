@@ -28,6 +28,10 @@
                     <a href="{{ route('admin_setting') }}">
                         <i class="far fa-check-square"></i>Settings</a>
                 </li>
+                <li>
+                    <a href="{{ route('admin_message') }}">
+                        <i class="far fa-check-square"></i>Contact Messages</a>
+                </li>
                 <li class="has-sub">
                     <a class="js-arrow" href="#">
                         <i class="fas fa-copy"></i>Pages</a>

@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Content;
 use App\Models\Menu;
+use App\Models\Message;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -24,25 +26,48 @@ class HomeController extends Controller
      {
 
     $setting= Setting::first();         //tek satır alıyoruz
-    return view('home.index', ['setting'=> $setting]);
+    return view('home.index', ['setting'=> $setting, 'page'=>'home']);
      }
 
     public function aboutus(){
 
-        return view('home.about');
+        $setting= Setting::first();
+
+        return view('home.about', ['setting'=> $setting]);
     }
 
     public function faq(){
 
-        return view('home.about');
+        $setting= Setting::first();
+
+        return view('home.faq', ['setting'=> $setting]);
     }
     public function references(){
 
-        return view('home.about');
+        $setting= Setting::first();
+
+        return view('home.references', ['setting'=> $setting]);
     }
     public function contact(){
 
-        return view('home.about');
+        $setting= Setting::first();
+
+        return view('home.contact', ['setting'=> $setting]);
+    }
+
+    public function sendmessage(Request $request){
+
+        $data= new Message();
+        $data-> name= $request->input('name');
+        $data-> email = $request->input('email');
+        $data-> phone = $request->input('phone');
+        $data-> status = $request->input('status');
+        $data->message= $request->input('message');
+        $data->subject= $request->input('subject');
+        $data->note= $request->input('note');
+        $data->save();
+        Session::flash('message', 'This is a message!');
+        return redirect()->route('contact')->with('success', 'Mesajınız kaydedilmiştir, teşekkür ederiz');
     }
 
     public function login(){

@@ -46,10 +46,9 @@
 
 @include('home.header')
 
-<div>
 @section('content')
 @show
-</div>
+
 @include('home.footer')
 
 </body>

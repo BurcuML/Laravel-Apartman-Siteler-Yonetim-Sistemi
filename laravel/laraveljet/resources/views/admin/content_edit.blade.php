@@ -25,9 +25,9 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-user"></i>
                                 </div>
-                                <select name="menu_id" id="SelectLm"  class="form-control ">
+                                <select name="menu_id" id="SelectLm"  class="form-control " style="height: 3.5rem">
 
-                                    <option value="">Kişi Listesi</option>
+                                    <option value="" >Kişi Listesi</option>
                                     @foreach ($datalist as $user)
                                         <option value="{{ $user->id }}"  @if ($user->id == $data->menu_id) selected="selected" @endif > {{ $user->title }} </option>
                                     @endforeach
@@ -108,7 +108,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                <select id="SelectLm" class="form-control">
+                                <select id="SelectLm" class="form-control" style="height: 3rem">
                                     <option selected="selected">Please select</option>
                                     <option >True</option>
                                     <option>False</option>

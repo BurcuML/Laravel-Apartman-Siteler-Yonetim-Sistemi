@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('title', 'About Us')
+@section('title', 'References')
 
 @section('content')
     <br><br><br><br>
@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumbs">
-                        <a href="{{route('home')}}">Home</a><i class="fa fa-angle-double-right"></i><span>Hakkımızda</span>
+                        <a href="{{route('home')}}">Home</a><i class="fa fa-angle-double-right"></i><span>References</span>
                     </div> <!-- end of breadcrumbs -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -19,7 +19,7 @@
     <!-- end of breadcrumbs -->
 
     <div>
-        {!!$setting->aboutus  !!}
+        {{$setting->references}}
     </div>
 
 @endsection

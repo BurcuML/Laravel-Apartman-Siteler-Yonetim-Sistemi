@@ -22,6 +22,11 @@ class HomeController extends Controller
         return Setting::first();
     }
 
+    public static function gettype()
+    {
+        return Content::all();
+    }
+
      public function index()
      {
 
@@ -54,6 +59,11 @@ class HomeController extends Controller
 
         return view('home.contact', ['setting'=> $setting]);
     }
+    public function icerik(){
+
+
+        return view('home.icerikdetay');
+    }
 
     public function sendmessage(Request $request){
 
@@ -61,6 +71,7 @@ class HomeController extends Controller
         $data-> name= $request->input('name');
         $data-> email = $request->input('email');
         $data-> phone = $request->input('phone');
+        $data->apartmannumarasi= $request->input('apartmannumarasi');
         $data-> status = $request->input('status');
         $data->message= $request->input('message');
         $data->subject= $request->input('subject');

@@ -22,7 +22,7 @@
                 </li>
                 <li>
                     <a href="{{ route('admin_menu_add') }}">
-                        <i class="far fa-check-square"></i>Forms</a>
+                        <i class="far fa-check-square"></i>Add</a>
                 </li>
                 <li>
                     <a href="{{ route('admin_setting') }}">

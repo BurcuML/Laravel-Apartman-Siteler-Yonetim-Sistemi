@@ -61,6 +61,38 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <input type="text" id="email" name="kira" placeholder="Kira" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <input type="text" id="email" name="aidat" placeholder="Aidat" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <input type="text" id="email" name="bloknumarasi" placeholder="Blok Numarası" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <input type="text" id="email" name="apartmannumarasi" placeholder="Apartman Numarası" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
                                 </div>
                                 <input type="text" id="email" name="type" placeholder="Type" class="form-control">
                             </div>
@@ -86,15 +118,17 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                <input type="text" id="password" name="status" placeholder="Status" class="form-control">
+                                <input type="text" id="password" name="duyuru" placeholder="Duyuru" class="form-control">
                             </div>
                         </div>
+
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
+
                                 </div>
-                                <select id="SelectLm" class="form-control" style="height: 3.5rem;">
+                                <select id="SelectLm" class="form-control" style="height: 3.5rem;" name="status">
                                     <option selected="selected">Please select</option>
                                     <option >True</option>
                                     <option>False</option>

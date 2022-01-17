@@ -65,6 +65,11 @@ class MenuController extends Controller
             'keywords' => $request->input('keywords'),
             'description' => $request->input('description'),
             'status' => $request->input('status'),
+            'aidat' =>$request->input('aidat'),
+            'kira' => $request->input('kira'),
+            'bloknumarasi'=>$request->input('bloknumarasi'),
+            'apartmannumarasi'=> $request->input('apartmannumarasi'),
+
         ]);
         return redirect()->route('admin_menu');
     }

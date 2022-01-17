@@ -20,9 +20,12 @@
                         <th>ID</th>
                         <th>Category</th>
                         <th>name</th>
+                        <th>Apartman Numarası</th>
+                        <th>Blok Numarası</th>
                         <th>Kira</th>
                         <th>Aidat</th>
                         <th>Type</th>
+                        <th>Duyuru</th>
                         <th class="text-right">Status</th>
                         <th class="text-right">Image</th>
                         <th class="text-right">Gallery</th>
@@ -37,9 +40,12 @@
                             <td>{{ $user->id }}</td>
                             <td>{{ $user->menu->title ?? 'None'}}</td>
                             <td>{{ $user->title }}</td>
+                            <td>{{ $user->apartmannumarasi }}</td>
+                            <td>{{ $user->bloknumarasi }}</td>
                             <td>{{ $user->kira }}</td>
                             <td>{{ $user->aidat }}</td>
                             <td>{{ $user->type }}</td>
+                            <td>{{ $user->duyuru }}</td>
                             <td class="text-right">{{ $user->status }}</td>
                             <td class="text-right">
                                 @if ($user->image)

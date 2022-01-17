@@ -20,6 +20,11 @@ class CreateContentsTable extends Migration
             $table->string('description')->nullable();
             $table->string('image', 100)->nullable();
             $table->string('type',100)->nullable();
+            $table->integer('kira',75)->nullable();
+            $table->integer('aidat',75)->nullable();
+            $table->string('apartmannumarasi',50)->nullable();
+            $table->string('duyuru',500)->nullable();
+            $table->string('bloknumarasi',50)->nullable();
             $table->integer('menu_id')->nullable();
             $table->integer('user_id')->nullable();
             $table->text('detail')->nullable();

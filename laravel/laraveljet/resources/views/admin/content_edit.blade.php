@@ -23,7 +23,6 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">
-                                    <i class="fa fa-user"></i>
                                 </div>
                                 <select name="menu_id" id="SelectLm"  class="form-control " style="height: 3.5rem">
 
@@ -37,7 +36,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">
-                                    <i class="fa fa-user"></i>
+
                                 </div>
                                 <input type="text" id="username" name="title" value="{{$data->title}}" placeholder="Title" class="form-control">
                             </div>
@@ -45,7 +44,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">
-                                    <i class="fa fa-user"></i>
+
                                 </div>
                                 <input type="text" id="username" name="keywords" value="{{$data->keywords}}" placeholder="Keywords" class="form-control">
                             </div>
@@ -53,7 +52,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">
-                                    <i class="fa fa-envelope"></i>
+
                                 </div>
                                 <input type="text" id="email" name="description" value="{{$data->description}}" placeholder="Description" class="form-control">
                             </div>
@@ -62,7 +61,6 @@
                             <div class="input-group">
                                 <div class="input-group-addon">
 
-                                </div>
                                 <input type="text" id="email" name="type" value="{{$data->type}}" placeholder="Type" class="form-control">
                             </div>
                         </div>
@@ -75,30 +73,54 @@
 
                             </script>
                         </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-envelope"></i>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <input type="text" id="email" name="kira"  value="{{$data->kira}}" placeholder="Kira" class="form-control">
                                 </div>
-                                <input type="text" id="email" name="detail" value="{{$data->detail}}" placeholder="Detail" class="form-control">
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-asterisk"></i>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <input type="text" id="email" name="aidat"  value="{{$data->aidat}}" placeholder="Aidat" class="form-control">
                                 </div>
-                                <input type="text" id="password" name="status" value="{{$data->status}}" placeholder="Status" class="form-control">
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <input type="text" id="email" name="bloknumarasi"  value="{{$data->bloknumarasi}}" placeholder="Blok Numarası" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <input type="text" id="email" name="apartmannumarasi"  value="{{$data->apartmannumarasi}}" placeholder="Apartman Numarası" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-asterisk"></i>
+                                    </div>
+                                    <input type="text" id="password" name="duyuru" value="{{$data->duyuru}}" placeholder="Duyuru" class="form-control">
+                                </div>
+                            </div>
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-addon">
-                                            <i class="fa fa-asterisk"></i>
+
                                         </div>
                                         <input type="file" id="password" name="image" value="{{$data->image}}" placeholder="Image" class="form-control">
                                         @if ($data->image)
-                                        <img src="{{ Storage:: url($data->image)}}" height="30" alt="">
+                                        <img src="{{ \Illuminate\Support\Facades\Storage:: url($data->image)}}" height="30" alt="">
                                         @endif
                                     </div>
                                 </div>
@@ -106,9 +128,9 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">
-                                    <i class="fa fa-asterisk"></i>
+
                                 </div>
-                                <select id="SelectLm" class="form-control" style="height: 3rem">
+                                <select id="SelectLm" class="form-control" style="height: 3rem" value="{{$data->status}}">
                                     <option selected="selected">Please select</option>
                                     <option >True</option>
                                     <option>False</option>

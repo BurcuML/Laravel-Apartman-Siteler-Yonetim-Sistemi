@@ -33,25 +33,7 @@
                     </ul>
                 </div>
             </div> <!-- end of col -->
-            <div class="col-md-3">
-                <div class="footer-col third">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled li-space-lg p-small">
-                        <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="article-details.html">Article Details</a></div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
-                        </li>
-                    </ul>
-                </div>
-            </div> <!-- end of col -->
+
             <div class="col-md-3">
                 <div class="footer-col fourth">
                     <h5>Social Media</h5>

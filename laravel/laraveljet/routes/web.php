@@ -27,6 +27,7 @@ Route::get('/references', [HomeController::class, 'references'])->name('referenc
 Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
+Route::get('/icerik', [HomeController::class, 'icerik'])->name('icerik');
 
 //Admin
 /* prefix: ön ad örneğin Admini sürekli yazmak istemiyorsak tanımlıyoruz*/

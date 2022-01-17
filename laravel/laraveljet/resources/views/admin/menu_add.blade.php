@@ -47,6 +47,22 @@
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <input type="text" id="apartmannumarasi" name="apartmannumarasi" placeholder="Apartman Numarası" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <input type="text" id="bloknumarasi" name="bloknumarasi" placeholder="Blok Numarası" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
                             <i class="fa fa-envelope"></i>
                         </div>
                         <input type="text" id="email" name="description" placeholder="Description" class="form-control">
@@ -57,7 +73,7 @@
                         <div class="input-group-addon">
                             <i class="fa fa-asterisk"></i>
                         </div>
-                        <input type="text" id="password" name="status" placeholder="Status" class="form-control">
+                        <input type="text" id="password" name="kira" placeholder="Kira" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
@@ -65,7 +81,15 @@
                         <div class="input-group-addon">
                             <i class="fa fa-asterisk"></i>
                         </div>
-                        <select id="SelectLm" class="form-control">
+                        <input type="text" id="password" name="aidat" placeholder="Aidat" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-asterisk"></i>
+                        </div>
+                        <select id="SelectLm" class="form-control" name="status">
                             <option selected="selected">Please select</option>
                             <option >True</option>
                             <option>False</option>

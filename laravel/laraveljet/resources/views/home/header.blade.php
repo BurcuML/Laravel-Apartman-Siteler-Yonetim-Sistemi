@@ -22,7 +22,7 @@
                 <a class="nav-link page-scroll" href="{{route('admin-login')}}">GİRİŞ<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="/register">KAYIT OL <span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="/register">KAYIT OL <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="{{route('faq')}}">SIKÇA SORULAN SORULAR</a>
@@ -79,7 +79,7 @@
                 <div class="text-container">
 
                     <h1>Apartmanımıza Hoşgeldiniz</h1>
-                    <p class="p-large">Do you feel like you're doing a lot of guess work when it comes to SEO for your website? Take the SEO training course to change that</p>
+                    <p class="p-large"></p>
                     <a class="btn-solid-lg page-scroll" href="/register">KAYIT OL</a>
                     <a class="btn-outline-lg page-scroll" href="#instructor">KEŞFET</a>
                 </div> <!-- end of text-container -->
@@ -95,19 +95,19 @@
 
                     <!-- Slide -->
                     <div class="swiper-slide" >
-                        <img class="img-fluid" src="{{ asset('assets') }}/images/details-slide-1.jpg" alt="alternative">
+                        <a href="{{route('icerik')}}"> <img class="img-fluid" src="{{ asset('assets') }}/images/details-slide-1.jpg" alt="alternative"></a>
                     </div>
                     <!-- end of slide -->
 
                     <!-- Slide -->
                     <div class="swiper-slide">
-                        <img class="img-fluid" src="{{ asset('assets') }}/images/details-slide-2.jpg" alt="alternative">
+                        <a href="{{route('icerik')}}"> <img class="img-fluid" src="{{ asset('assets') }}/images/details-slide-2.jpg" alt="alternative"></a>
                     </div>
                     <!-- end of slide -->
 
                     <!-- Slide -->
                     <div class="swiper-slide">
-                        <img class="img-fluid" src="{{ asset('assets') }}/images/details-slide-3.jpg" alt="alternative">
+                        <a href="{{route('icerik')}}"><img class="img-fluid" src="{{ asset('assets') }}/images/details-slide-3.jpg" alt="alternative"></a>
                     </div>
                     <!-- end of slide -->
 

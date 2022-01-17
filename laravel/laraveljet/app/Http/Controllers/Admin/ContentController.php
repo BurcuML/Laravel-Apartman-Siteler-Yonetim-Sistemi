@@ -52,6 +52,11 @@ class ContentController extends Controller
         $data-> status = $request->input('status');
         $data->type= $request->input('type');
         $data->menu_id= $request->input('menu_id');
+        $data-> aidat = $request->input('aidat');
+        $data->kira= $request->input('kira');
+        $data->duyuru= $request->input('duyuru');
+        $data->bloknumarasi= $request->input('bloknumarasi');
+        $data->apartmannumarasi= $request->input('apartmannumarasi');
         $data->user_id= Auth::id();
         $data->detail= $request->input('detail');
         $data->image= Storage::putFile('images', $request->file('image')); //file upload
@@ -102,9 +107,11 @@ class ContentController extends Controller
         $data-> status = $request->input('status');
         $data->type= $request->input('type');
         $data->menu_id= $request->input('menu_id');
-        $data-> status = $request->input('status');
-        $data->type= $request->input('type');
-        $data->menu_id= $request->input('menu_id');
+        $data-> aidat = $request->input('aidat');
+        $data->kira= $request->input('kira');
+        $data->duyuru= $request->input('duyuru');
+        $data->bloknumarasi= $request->input('bloknumarasi');
+        $data->apartmannumarasi= $request->input('apartmannumarasi');
         $data->user_id= Auth::id();
         $data->detail= $request->input('detail');
         $data->image= Storage::putFile('images', $request->file('image')); //file upload

@@ -9,6 +9,9 @@
 
 @section('content')
 
+    @php
+        $type =  App\Http\Controllers\HomeController::gettype()
+    @endphp
 
     <!-- Registration -->
     <div id="register" class="form-1">
@@ -38,7 +41,7 @@
 
                     <!-- Registration Form -->
                     <div class="form-container">
-                        <form id="registrationForm" data-toggle="validator" data-focus="false">
+                        <form id="registrationForm" action="/register" method="post">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rname" name="rname" required>
                                 <label class="label-control" for="rname">İsim Soyisim</label>
@@ -144,58 +147,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>What Will You Learn In Our SEO Focused Training Course</h2>
+                    <h2>DUYURULAR</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
+
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <ul class="list-unstyled li-space-lg first">
+                        @foreach($type as $typ)
                         <li class="media">
-                            <i class="bullet">1</i>
+                            <i class="bullet"></i>
                             <div class="media-body">
-                                <h4>Optimizing your site for mobile devices</h4>
-                                <p>One of the keys of great SEO is having a mobile friendly website which works smoothly on all devices</p>
+                                <p>{{$typ->duyuru}}</p>
+                                <div class="testimonial-author">{{$typ->title}}</div>
                             </div>
                         </li>
-                        <li class="media">
-                            <i class="bullet">2</i>
-                            <div class="media-body">
-                                <h4>Understand how users search</h4>
-                                <p>It's not enough anymore to find relevant industry keywords and write huge amounts of content </p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <i class="bullet">3</i>
-                            <div class="media-body">
-                                <h4>Write for humans optimize for engines</h4>
-                                <p>Write well structured and understandable articles not just a mix of paragraphs that contain keywords</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <ul class="list-unstyled li-space-lg second">
-                        <li class="media">
-                            <i class="bullet">4</i>
-                            <div class="media-body">
-                                <h4>Analyse your existing search traffic</h4>
-                                <p>A good action plan comes out of understanding where your current position is and the environment</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <i class="bullet">5</i>
-                            <div class="media-body">
-                                <h4>Keep updated with the latest changes</h4>
-                                <p>Google changes it's search indexing algorithm twice a year so it's important to stay updated with news</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <i class="bullet">6</i>
-                            <div class="media-body">
-                                <h4>Learn the most important ranking factors</h4>
-                                <p>Learn which are the most important search engine ranking factors and optimize your website accordnigly</p>
-                            </div>
-                        </li>
+                        @endforeach
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -209,8 +176,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Key Takeaways</h2>
-                    <p class="p-heading">Here are the main topics that will be covered in the SEO training course. They cover all the basics of SEO and even some advanced techniques that will help you along the way</p>
+                    <h2>Apartman Sitemizde</h2>
+                    <p class="p-heading">Aşağıda gördüğünüz seçenekler apartmanımızda mevcuttur.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -266,7 +233,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3>Check out our attendees testimonials from previous editions of the SEO Training</h3>
+                    <h3>Apartman Sakinlerimizin Yorumları</h3>
 
                     <!-- Text Slider -->
                     <div class="slider-container">

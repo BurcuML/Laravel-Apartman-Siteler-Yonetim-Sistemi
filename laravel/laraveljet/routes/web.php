@@ -28,6 +28,17 @@ Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::get('/icerik', [HomeController::class, 'icerik'])->name('icerik');
+Route::get('/paymen', [HomeController::class, 'paymen'])->name('paymen');
+
+Route::get('/review', [\App\Http\Controllers\Admin\RevieController::class, 'index'])->name('admin_review');
+Route::post('/sendreview', [HomeController::class, 'sendreview'])->name('sendreview');
+
+Route::get('/payment', [\App\Http\Controllers\Admin\PaymentController::class, 'index'])->name('admin_payment');
+Route::get('payment/edit/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'edit'])->name('admin_payment_edit');
+Route::post('payment/update/{id}', [\App\Http\Controllers\Admin\PaymentController::class, 'update'])->name('admin_payment_update');
+Route::post('/sendprice', [HomeController::class, 'sendprice'])->name('sendprice');
+
+
 
 //Admin
 /* prefix: ön ad örneğin Admini sürekli yazmak istemiyorsak tanımlıyoruz*/

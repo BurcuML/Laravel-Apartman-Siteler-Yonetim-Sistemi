@@ -14,6 +14,7 @@
                 <div class="breadcrumbs">
                     <a href="{{route('home')}}">Home</a><i class="fa fa-angle-double-right"></i><span>User Profile</span>
                     <i class="fa fa-angle-double-right"></i><a href="{{route('home')}}">Logout</a>
+                    <i class="fa fa-angle-double-right"></i><a href="{{route('adminhome')}}">Admin</a>
                 </div> <!-- end of breadcrumbs -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->

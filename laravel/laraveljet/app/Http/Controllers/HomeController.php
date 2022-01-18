@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Livewire\Review;
 use App\Models\Content;
 use App\Models\Menu;
 use App\Models\Message;
+use App\Models\Payment;
+use App\Models\Revi;
+use App\Models\Revie;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -25,6 +29,14 @@ class HomeController extends Controller
     public static function gettype()
     {
         return Content::all();
+    }
+    public static function gettit()
+    {
+        return Menu::all();
+    }
+    public static function getrev()
+    {
+        return Revie::all();
     }
 
      public function index()
@@ -64,6 +76,11 @@ class HomeController extends Controller
 
         return view('home.icerikdetay');
     }
+    public function paymen(){
+
+
+        return view('home.user_kira_aidat');
+    }
 
     public function sendmessage(Request $request){
 
@@ -79,6 +96,34 @@ class HomeController extends Controller
         $data->save();
         Session::flash('message', 'This is a message!');
         return redirect()->route('contact')->with('success', 'Mesajınız kaydedilmiştir, teşekkür ederiz');
+    }
+
+    public function sendreview(Request $request){
+
+        $data= new Revie();
+        $data-> user_id = $request->input('user_id');
+        $data-> name = $request->input('name');
+        $data-> apartman = $request->input('apartman');
+        $data-> subject = $request->input('subject');
+        $data->review= $request->input('review');
+        $data->save();
+        return redirect()->route('icerik');
+    }
+
+    public function sendprice(Request $request){
+
+        $data= new Payment();
+        $data-> name = $request->input('name');
+        $data-> apartmannumarasi = $request->input('apartmannumarasi');
+        $data-> bloknumarasi = $request->input('bloknumarasi');
+        $data-> odasayisi = $request->input('odasayisi');
+        $data-> kartnumarasi = $request->input('kartnumarasi');
+        $data->guvenliknumarasi= $request->input('guvenliknumarasi');
+        $data->kira= $request->input('kira');
+        $data->aidat= $request->input('aidat');
+        $data->adminnote= $request->input('adminnote');
+        $data->save();
+        return redirect()->route('paymen');
     }
 
     public function login(){

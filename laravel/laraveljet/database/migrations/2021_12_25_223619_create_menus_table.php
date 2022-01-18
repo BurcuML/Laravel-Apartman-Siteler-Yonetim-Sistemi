@@ -20,6 +20,10 @@ class CreateMenusTable extends Migration
             $table->string('keywords')->nullable();
             $table->string('description')->nullable();
             $table->string('image', 100)->nullable();
+            $table->integer('kira',50)->nullable();
+            $table->integer('aidat',50)->nullable();
+            $table->integer('apartmannumarasi',50)->nullable();
+            $table->integer('bloknumarasi',50)->nullable();
             $table->string('status', 5)->nullable()->default('False');
             $table->timestamps();
         });

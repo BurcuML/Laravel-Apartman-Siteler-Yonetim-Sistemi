@@ -33,9 +33,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SEÇENEKLER</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="article-details.html"><span class="item-text">Kira Ödeme</span></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Aidat Ödeme</span></a>
+                    <a class="dropdown-item" href="{{route('paymen')}}"><span class="item-text">Kira ve Aidat Ödeme</span></a>
+
                 </div>
 
 

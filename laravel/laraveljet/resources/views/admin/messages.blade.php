@@ -9,8 +9,6 @@
     <div class="row">
         <div class="col-lg-12">
             <h2 class="title-1 m-b-25">Messages</h2>
-            <a href="#"><button type="button" class="btn btn-warning btn-sm" style="padding:7px; margin: 10px; width:7rem; ">
-                    <i class="fa fa-map-marker"></i>&nbsp; Ekle</button></a>
             <br>
             @include('home.message')
             <br>

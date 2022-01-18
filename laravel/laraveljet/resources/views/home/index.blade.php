@@ -12,6 +12,9 @@
     @php
         $type =  App\Http\Controllers\HomeController::gettype()
     @endphp
+    @php
+        $rev =  App\Http\Controllers\HomeController::getrev()
+    @endphp
 
     <!-- Registration -->
     <div id="register" class="form-1">
@@ -239,54 +242,21 @@
                     <div class="slider-container">
                         <div class="swiper-container text-slider">
                             <div class="swiper-wrapper">
-
+                            @foreach($rev as $review)
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="image-wrapper">
-                                        <img class="img-fluid" src="{{ asset('assets') }}/images/testimonial-1.jpg" alt="alternative">
+                                        <img class="img-fluid" src="{{ asset('assets') }}/images/dp-4-1.jpg" alt="alternative">
                                     </div> <!-- end of image-wrapper -->
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">I took the SEO training course about a year ago and I am very happy. It taught me all the basics of search engine optimization and some tricks.</div>
-                                        <div class="testimonial-author">Jude Thorn - Online Marketer</div>
-                                    </div> <!-- end of text-wrapper -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="{{ asset('assets') }}/images/testimonial-2.jpg" alt="alternative">
-                                    </div> <!-- end of image-wrapper -->
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Awesome course for the money. I never thought I could learn so much about search engine optimization in such a short amount of time. Highly recommend.</div>
-                                        <div class="testimonial-author">Roy Smith - Developer</div>
-                                    </div> <!-- end of text-wrapper -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+                                        <div class="testimonial-text">{{$review->review}}</div>
+                                        <div class="testimonial-author">{{$review->name}}</div>
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="{{ asset('assets') }}/images/testimonial-3.jpg" alt="alternative">
-                                    </div> <!-- end of image-wrapper -->
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Corso is the best SEO training course in the market. It teaches you all the basics but it also adds value with some advanced tips & tricks the are great.</div>
-                                        <div class="testimonial-author">Martin Singer - Online Marketer</div>
                                     </div> <!-- end of text-wrapper -->
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="{{ asset('assets') }}/images/testimonial-4.jpg" alt="alternative">
-                                    </div> <!-- end of image-wrapper -->
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Learning SEO can actually be fun. I attended Corso SEO training and I had a great time with my peer students and the instructors. Highly recommended course.</div>
-                                        <div class="testimonial-author">Ronda Louis - Business Owner</div>
-                                    </div> <!-- end of text-wrapper -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+                            @endforeach
 
                             </div> <!-- end of swiper-wrapper -->
 

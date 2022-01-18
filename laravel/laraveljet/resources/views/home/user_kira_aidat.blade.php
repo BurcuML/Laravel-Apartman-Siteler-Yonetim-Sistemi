@@ -1,6 +1,5 @@
 
-
-@section('title', 'İçerik Detay')
+    <br><br>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +20,7 @@
     <meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Detail</title>
+    <title>Ödeme</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
@@ -82,12 +81,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SEÇENEKLER</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="article-details.html"><span class="item-text">Kira Ödeme</span></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Aidat Ödeme</span></a>
+                    <a class="dropdown-item" href="article-details.html"><span class="item-text">Kira ve Aidat Ödeme</span></a>
                 </div>
-
-
             </li>
             <!-- end of dropdown menu -->
 
@@ -120,13 +115,12 @@
 <!-- end of navigation -->
 
 
-
 <!-- Header -->
 <header id="header" class="ex-header">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="white">Apartmanımızın İçerik Detayı</h1>
+                <h1 class="white">Ödeme</h1>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
@@ -140,7 +134,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumbs">
-                    <a href="{{route('home')}}">Home</a><i class="fa fa-angle-double-right"></i><span></span>
+                    <a href="{{route('home')}}">Home</a><i class="fa fa-angle-double-right"></i>
                 </div> <!-- end of breadcrumbs -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->
@@ -149,138 +143,81 @@
 <!-- end of breadcrumbs -->
 
 
-<!-- Privacy Content -->
-<div class="ex-basic-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="image-container-large">
-                    <img class="img-fluid" src="{{ asset('assets') }}/images/details-slide-1.jpg" alt="alternative">
-                </div> <!-- end of image-container-large -->
-                <div class="text-container">
-                    <h3>Apartman Sitemizin Dıştan Detaylı Görünümü</h3>
-                    <p>Corso also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained from cookies. For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page, and the web page(s) you access (as applicable).</p>
-                    <p>When you first register for a Corso account, and when you use the Services, we collect some <a href="#your-link">Personal Information</a> about you such as:</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">The geographic area where you use your computer and mobile devices should be the same with the one of your</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Your full name, username, and email address and other contact details should be provided in the contact forms</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">A unique Corso user ID (an alphanumeric string) which is assigned to you upon registration should always be at front</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Every system is backuped regularly and it will not fail</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Your IP Address and, when applicable, timestamp related to your consent and confirmation of consent but please make</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Other information submitted by you or your organizational representatives via various methods and practiced techniques</div>
-                                </li>
-                            </ul>
-                        </div> <!-- end of col -->
 
-                        <div class="col-md-6">
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Your billing address and any necessary other information to complete any financial transaction, and when making purchases through the Services, we may also collect your credit card or PayPal information or any other sensitive</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">User generated content (such as messages, posts, comments, pages, profiles, images, feeds or communications exchanged on the Supported Platforms that can be used)</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Images or other files that you may publish via our Services</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Information (such as messages, posts, comments, pages, profiles, images) we may receive relating to communications you send us, such as queries or comments concerning</div>
-                                </li>
-                            </ul>
-                        </div> <!-- end of col -->
-                    </div> <!-- end of row -->
-                </div> <!-- end of text-container-->
+<br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-container last">
+                            <h3>Kira ve Aidat Ödemeleriniz İçin</h3>
+                            <p>Corso Landing Page uses tracking technology on the landing page, in the Applications, and in the Platforms, including mobile application identifiers and a unique Corso user ID to help us. Recognize you across different Services, to monitor usage and web traffic routing for the Services, and to customize the Services.</p>
+                            <p>By visiting Corso or using the Services you agree to the use of cookies in your browser and HTML-based emails. You visit a website, by using any of the Services, or submitting via the Services you consent and use of your basic <a href="#your-link">Personal Information</a></p>
+                        </div> <!-- end of text container -->
+                    </div> <!-- end of col-->
+                    <div class="col-md-6">
 
-                <div class="text-container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3>Yan Tarafta Örnek Bir Dairemiz Bulunmakta</h3>
-                            <p>Corso also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained.</p>
-                            <p>For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page.</p>
-                            <p>The best way to promoted digital products is to provide potential users with free versions throughout the product's life.</p>
-                        </div> <!-- end of col -->
-                        <div class="col-md-6">
-                            <div class="image-container-small">
-                                <img class="img-fluid" src="{{ asset('assets') }}/images/details-slide-3.jpg" alt="alternative">
-                            </div> <!-- end of image-container-small -->
-                        </div> <!-- end of col -->
-                    </div> <!-- end of row -->
-                </div> <!-- end of text-container -->
+                        <!-- Privacy Form -->
+                        <div class="form-container">
+                            <form  action="{{route('sendprice')}}" method="post">
+                            @csrf
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="name" name="name" required>
+                                    <label class="label-control" for="name">İsim-Soyisim</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="apartmannumarasi" name="apartmannumarasi" required>
+                                    <label class="label-control" for="apartmannumarasi">Apartman Numarası</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="bloknumarasi" name="bloknumarasi" required>
+                                    <label class="label-control" for="bloknumarasi">Blok Numarası</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="odasayisi" name="odasayisi" required>
+                                    <label class="label-control" for="odasayisi">Oda Sayısı</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="kartnumarasi" name="kartnumarasi" required>
+                                    <label class="label-control" for="kartnumarasi">Kart Numarası</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="guvenliknumarasi" name="guvenliknumarasi" required>
+                                    <label class="label-control" for="guvenliknumarasi">Güvenlik Numarası</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="kira" name="kira" required>
+                                    <label class="label-control" for="kira">Kira</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="aidat" name="aidat" required>
+                                    <label class="label-control" for="aidat">Aidat</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control-submit-button">ÖDEME</button>
+                                </div>
+                                <div class="form-message">
+                                    <div id="pmsgSubmit" class="h3 text-center hidden"></div>
+                                </div>
+                            </form>
+                        </div> <!-- end of form container -->
+                        <!-- end of privacy form -->
 
-                <div class="text-container dark">
-                    <p class="testimonial-text">Corso is a HTML landing page template tool. By its nature, Services enable our customers to promote their products and services integrate with hundreds of business applications that they already use, all in one place. Services help our customers promote their products and services, marketing and advertising; engaging audiences; scheduling and publishing.</p>
-                </div> <!-- end of text container -->
-
-                <div class="text-container last">
-                    <h3>Dairelerimiz her açıdan konforlu ve huzurludur.</h3>
-                </div> <!-- end of text-container -->
+                    </div> <!-- end of col-->
+                </div> <!-- end of row -->
                 <a class="btn-solid-reg" href="{{route('home')}}">BACK</a>
             </div> <!-- end of col-->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div> <!-- end of ex-basic-2 -->
 <!-- end of privacy content -->
-<br><br>
-<!-- Contact Form -->
-<h2>Yorumlarınızı Bekleriz</h2>
-<form action="{{route('sendreview')}}" method="post">
-    @csrf
-    <div class="form-group">
-        <input type="text" class="form-control-input" id="user_id" name="user_id" required>
-        <label class="label-control" for="user_id">User_id</label>
-        <div class="help-block with-errors"></div>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control-input" id="name" name="name" required>
-        <label class="label-control" for="name">Name</label>
-        <div class="help-block with-errors"></div>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control-input" id="apartman" name="apartman" required>
-        <label class="label-control" for="apartman">Apartman</label>
-        <div class="help-block with-errors"></div>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control-input" id="subject" name="subject" required>
-        <label class="label-control" for="subject">Subject</label>
-        <div class="help-block with-errors"></div>
-    </div>
-    <div class="form-group">
-        <textarea class="form-control-textarea" id="review" name="review" required></textarea>
-        <label class="label-control" for="review">Review</label>
-        <div class="help-block with-errors"></div>
-    </div>
-    <div class="form-group">
-        <button type="submit" class="form-control-submit-button">SUBMIT</button>
-    </div>
-    <div class="form-message">
-        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-    </div>
-</form>
-<!-- end of contact form -->
+
 
 <!-- Breadcrumbs -->
 <div class="ex-basic-1">
@@ -288,7 +225,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumbs">
-                    <a href="{{route('home')}}">Home</a><i class="fa fa-angle-double-right"></i><span></span>
+                    <a href="{{route('home')}}">Home</a><i class="fa fa-angle-double-right"></i><span>Ödeme </span>
                 </div> <!-- end of breadcrumbs -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->

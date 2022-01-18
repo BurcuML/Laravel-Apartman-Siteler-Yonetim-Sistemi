@@ -21,6 +21,14 @@
                         <i class="fas fa-table"></i>Contents</a>
                 </li>
                 <li>
+                    <a href="{{ route('admin_review') }}">
+                        <i class="fas fa-table"></i>Review</a>
+                </li>
+                <li>
+                    <a href="{{ route('admin_payment') }}">
+                        <i class="fas fa-table"></i>Payment</a>
+                </li>
+                <li>
                     <a href="{{ route('admin_menu_add') }}">
                         <i class="far fa-check-square"></i>Add</a>
                 </li>
@@ -31,6 +39,10 @@
                 <li>
                     <a href="{{ route('admin_message') }}">
                         <i class="far fa-check-square"></i>Contact Messages</a>
+                </li>
+                <li>
+                    <a href="{{ route('home') }}">
+                        <i class="far fa-check-square"></i>Main Page</a>
                 </li>
                 <li class="has-sub">
                     <a class="js-arrow" href="#">

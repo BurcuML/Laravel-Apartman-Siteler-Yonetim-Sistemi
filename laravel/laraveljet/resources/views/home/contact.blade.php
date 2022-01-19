@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container">
-                        <h2>İletişim Formu</h2>
+                        <h2>İletişim-Talep Formu</h2>
                         <p>For registration questions please get in touch using the contact details below. For any questions use the form.</p>
                         <h3>İletişim Bilgileri</h3>
                         <ul class="list-unstyled li-space-lg">

@@ -47,7 +47,7 @@
                         </a>
                     </div>
                     <div class="login-form">
-
+     @include('home.message')
                         <form action="{{ route('logincheck')}}" method="post">
                             @csrf
                             <div class="form-group">

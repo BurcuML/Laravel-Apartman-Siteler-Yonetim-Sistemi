@@ -6,7 +6,7 @@
 
     <!-- Image Logo -->
     @auth
-    <a class="navbar-brand logo-image" style="text-decoration: none" href="{{route('myprofile')}}">{{Auth::user()->name}}</a>
+    <a class="navbar-brand logo-image" style="text-decoration: none" href="{{route('myprofile')}}">{{Auth::user()->name}}</a><strong>{{Auth::user()->roles->pluck('name')}}</strong>
 @endauth
 
     <!-- Mobile Menu Toggle Button -->
@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="{{route('admin-login')}}">GİRİŞ<span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="/login">GİRİŞ<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="/register">KAYIT OL <span class="sr-only"></span></a>

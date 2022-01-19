@@ -41,6 +41,10 @@
                         <i class="far fa-check-square"></i>Contact Messages</a>
                 </li>
                 <li>
+                    <a href="{{ route('admin_users') }}">
+                        <i class="far fa-check-square"></i>Users</a>
+                </li>
+                <li>
                     <a href="{{ route('home') }}">
                         <i class="far fa-check-square"></i>Main Page</a>
                 </li>

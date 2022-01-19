@@ -14,9 +14,9 @@
     <br> <br> <br>
     <div class="row">
         <div class="col-lg-12">
-            <h2 class="title-1 m-b-25">Ekle</h2>
+            <h2 class="title-1 m-b-25">Add</h2>
             <div class="card">
-                <div class="card-header">Form</div>
+                <div class="card-header">Content Edit</div>
                 <div class="card-body card-block">
                     <form role="form" action="{{route('admin_content_update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                         @csrf
@@ -26,7 +26,7 @@
                                 </div>
                                 <select name="menu_id" id="SelectLm"  class="form-control " style="height: 3.5rem">
 
-                                    <option value="" >Kişi Listesi</option>
+                                    <option value="" >List</option>
                                     @foreach ($datalist as $user)
                                         <option value="{{ $user->id }}"  @if ($user->id == $data->menu_id) selected="selected" @endif > {{ $user->title }} </option>
                                     @endforeach
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                         <div class="form-actions form-group">
-                            <button type="submit" class="btn btn-success btn-sm" style="background-color: rebeccapurple; border: 1px solid rebeccapurple; width: 7rem;">Güncelle</button>
+                            <button type="submit" class="btn btn-success btn-sm" style="background-color: rebeccapurple; border: 1px solid rebeccapurple; width: 7rem;">Update</button>
                         </div>
                     </form>
                 </div>

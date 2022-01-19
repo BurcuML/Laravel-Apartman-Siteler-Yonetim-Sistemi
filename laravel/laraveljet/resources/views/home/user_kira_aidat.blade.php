@@ -149,8 +149,12 @@
                     <div class="col-md-6">
                         <div class="text-container last">
                             <h3>Kira ve Aidat Ödemeleriniz İçin</h3>
-                            <p>Corso Landing Page uses tracking technology on the landing page, in the Applications, and in the Platforms, including mobile application identifiers and a unique Corso user ID to help us. Recognize you across different Services, to monitor usage and web traffic routing for the Services, and to customize the Services.</p>
-                            <p>By visiting Corso or using the Services you agree to the use of cookies in your browser and HTML-based emails. You visit a website, by using any of the Services, or submitting via the Services you consent and use of your basic <a href="#your-link">Personal Information</a></p>
+                            <p>Apartman ya da site huzurunun sağlanması, giderlerin karşılanması adına aidatların düzenli ve gününde toplanması gerekmektedir.
+
+                                Peki kiracı aidat ödemek zorunda mı? Tabii ki aidat ödemek kiracı ve sahipleri için zorunluluk taşıyan unsurların başında gelir. Apartman sakinleri ortak kullanım bedellerini aidatla karşıladığı için ve ortak kullanım bedellerinden faydalanan kiracılar da ödemekle yükümlüdür.
+
+                                Normal standartlarda ev sahipleri asıl aidatı ödemekle yükümlü olan kişilerdir. Ancak kira kontratını imzalayan kiracı bu kontratı dikkatle okumalıdır. Çünkü her zaman kontrat üzerinde kiracının aidatı ödemesi gerektiği hakkında madde bulunur. Bu maddeye dayanarak kiracı hakkında yasal işlem başlatmak mümkündür. Apartman yönetimi aidat borcunu ödemeyen kiracı için dava açma yetkisine sahip olan kişilerdir.</p>
+
                         </div> <!-- end of text container -->
                     </div> <!-- end of col-->
                     <div class="col-md-6">

@@ -19,7 +19,7 @@
     <!-- end of breadcrumbs -->
 
     <div>
-        {{$setting->references}}
+        {!!$setting->references!!}
     </div>
 
 @endsection
